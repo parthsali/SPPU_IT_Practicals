@@ -1,0 +1,210 @@
+// Assignment-01 : Classes and Object.
+
+// Problem Statement : Design a class ‘Complex’with data members for real and imaginary part.
+// Provide default and Parameterized constructors. Write a program to perform arithmetic 
+// operations of two complex numbers.
+
+import java.util.Scanner;
+class Complex{
+    double real;
+    double img;
+
+    public Complex(){
+        this(0, 0 );
+    }
+    public Complex(double real , double img){
+        this.real = real;
+        this.img = img;
+    }
+
+    public Complex addComplexNums(Complex b) {
+        Complex c = new Complex();
+        c.real = this.real + b.real;
+        c.img = this.img + b.img;
+        return c;
+    }
+
+    public Complex subComplexNums(Complex b){
+        Complex c = new Complex();
+        c.real = this.real - b.real;
+        c.img = this.img - b.img;
+        return c;
+    }
+    public Complex mulComplexNum(Complex b){
+        Complex c = new Complex();
+        c.real = this.real*b.real - this.img*b.img;
+        c.img = this.real*b.img + this.img*b.real;
+        return c;
+    }
+
+    public Complex divComplexNums(Complex b){
+        Complex c = new Complex();
+        c.real = (this.real*b.real + this.img*b.img)/(b.real*b.real + b.img*b.img);
+        c.img = (this.img*b.real - this.real)/(b.real*b.real + b.img*b.img);
+        return c;
+    }
+
+    public void displayComplexNum(){
+        System.out.println();
+        if(this.real == 0 && this.img == 0){
+            System.out.println("Final Complex Number is : " + 0);
+        }
+        else if(this.real == 0 && this.img != 0){
+            System.out.println("Final Complex Number is : " + this.img + "i");
+        }
+        else if(this.real != 0 && this.img == 0){
+            System.out.println("Final Complex Number is : " + this.real);
+        }
+        else if(this.img < 0){
+            System.out.println("Final Complex Number is : " + this.real + this.img + "i");
+        }
+        else{
+            System.out.println("Final Complex Number is : " + this.real + "+" + this.img + "i");
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    static Scanner sc = new Scanner(System.in);
+    public static void takeInput(Complex a, Complex b){
+        System.out.println("Enter ");
+        System.out.print("Real Part of First Complex Number : ");
+        a.real = sc.nextDouble();
+        System.out.print("Imaginary Part of First Complex Number : ");
+        a.img = sc.nextDouble();
+        System.out.print("Real Part of Second Complex Number : ");
+        b.real = sc.nextDouble();
+        System.out.print("Imaginary Part of Second Complex Number : ");
+        b.img = sc.nextDouble();
+        System.out.println();
+    }
+    public static void main(String[] args) {
+
+        while(true){
+            System.out.println("Complex Number Calculator.");
+            System.out.println("1. Addition.");
+            System.out.println("2. Subtraction.");
+            System.out.println("3. Multiplication.");
+            System.out.println("4. Division.");
+            System.out.println("5. Exit.");
+            System.out.println();
+
+            System.out.print("Enter Your Choice: ");
+            int choice = sc.nextInt();
+
+            switch (choice){
+                case 1 :
+                    Complex a1 = new Complex();
+                    Complex b1 = new Complex();
+                    takeInput(a1,b1);
+                    Complex c = a1.addComplexNums(b1);
+                    c.displayComplexNum();
+                    break;
+                case 2:
+                    Complex a2 = new Complex();
+                    Complex b2 = new Complex();
+                    takeInput(a2, b2);
+                    Complex c2= a2.subComplexNums(b2);
+                    c2.displayComplexNum();
+                    break;
+                case 3:
+                    Complex a3 = new Complex();
+                    Complex b3 = new Complex();
+                    takeInput(a3, b3);
+                    Complex c3 = a3.mulComplexNum(b3);
+                    c3.displayComplexNum();
+                    break;
+                case 4:
+                    Complex a4 = new Complex();
+                    Complex b4 = new Complex();
+                    takeInput(a4, b4);
+                    Complex c4 = a4.divComplexNums(b4);
+                    c4.displayComplexNum();
+                    break;
+                case 5:
+                    System.exit(0);
+            }
+        }
+    }
+}
+
+OUTPUT : 
+Complex Number Calculator.
+1. Addition.
+2. Subtraction.
+3. Multiplication.
+4. Division.
+5. Exit.
+
+Enter Your Choice: 1
+Enter 
+Real Part of First Complex Number : 10
+Imaginary Part of First Complex Number : 20
+Real Part of Second Complex Number : 10
+Imaginary Part of Second Complex Number : 20
+
+
+Final Complex Number is : 20.0+40.0i
+
+Complex Number Calculator.
+1. Addition.
+2. Subtraction.
+3. Multiplication.
+4. Division.
+5. Exit.
+
+Enter Your Choice: 2
+Enter 
+Real Part of First Complex Number : 10
+Imaginary Part of First Complex Number : 10
+Real Part of Second Complex Number : 20
+Imaginary Part of Second Complex Number : 20
+
+
+Final Complex Number is : -10.0-10.0i
+
+Complex Number Calculator.
+1. Addition.
+2. Subtraction.
+3. Multiplication.
+4. Division.
+5. Exit.
+
+Enter Your Choice: 3
+Enter 
+Real Part of First Complex Number : 10
+Imaginary Part of First Complex Number : 20
+Real Part of Second Complex Number : 30
+Imaginary Part of Second Complex Number : 40
+
+
+Final Complex Number is : -500.0+1000.0i
+
+Complex Number Calculator.
+1. Addition.
+2. Subtraction.
+3. Multiplication.
+4. Division.
+5. Exit.
+
+Enter Your Choice: 4
+Enter 
+Real Part of First Complex Number : 10
+Imaginary Part of First Complex Number : 20
+Real Part of Second Complex Number : 10
+Imaginary Part of Second Complex Number : 20
+
+
+Final Complex Number is : 1.0+0.38i
+
+Complex Number Calculator.
+1. Addition.
+2. Subtraction.
+3. Multiplication.
+4. Division.
+5. Exit.
+
+Enter Your Choice: 5
+
+Process finished with exit code 0

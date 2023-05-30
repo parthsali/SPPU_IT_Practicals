@@ -1,6 +1,6 @@
 ## INDEX OF LAB EXPERIMENTS
 
-|       Sr. No.       | Name of the Experiment                                                                                                                                                                                                               |
+|     **Sr. No.**     | **Name of the Experiment**                                                                                                                                                                                                           |
 | :-----------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                     | <p align='center'>**Group A**</p>                                                                                                                                                                                                    |
 | [1](Assignment-01)  | Study of Embedded C programming language (Overview, syntax, One simple program like addition of two numbers).                                                                                                                        |

@@ -1,0 +1,13 @@
+## INDEX OF LAB EXPERIMENTS
+
+| **LAB EXPT.NO** | **Problem Definition/Statement**                                                                                                                                 |
+| :-------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                 | <p align='center'>**Group A: Study of Databases**</p>                                                                                                            |
+|        1        | Study of MySQL Open source software. Discuss the characteristics like efficiency, scalability, performance and transactional properties                          |
+|        2        | Install and configure client and server of MySQL.(Show all commands and necessary steps for installation and configuration)                                      |
+|        3        | Study of SQLite: What is SQLite? Uses of Sqlite. Building and installing SQLite.                                                                                 |
+|                 | <p align='center'>**Group B: MySQL**</p>                                                                                                                         |
+|        4        | Design any database with at least 3 entities and relationships between them. Draw suitable ER/EER diagram for the system.                                        |
+|        5        | Design and implement a database (for assignment no 1) using DDL statements and apply normalization on them                                                       |
+|        6        | Create Table with primary key and foreign key constraints. <br>&nbsp;&nbsp;&nbsp;&nbsp;a. Alter table with add n modify<br>&nbsp;&nbsp;&nbsp;&nbsp;b. Drop table |
+|        7        | Perform following SQL queries on the database created in assignment                                                                                              |

@@ -4,10 +4,10 @@
 
 ### Output ScreenShots
 
-#### Bresenham Circle Drawing Algorithm - [Code](BresenhamCircle.cpp)
+### Bresenham Circle Drawing Algorithm - [Code](BresenhamCircle.cpp)
 
 <img src="circle.png" alt="circle"></img>
 
-#### Necklace Drawing - [code](Necklace.cpp)
+### Necklace Drawing - [code](Necklace.cpp)
 
 <img src="necklace.png" alt="necklace"></img>

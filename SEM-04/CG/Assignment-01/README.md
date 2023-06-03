@@ -18,7 +18,7 @@
 - _Navigate to the downloaded folder and select it to open it in Visual Studio
   Code._
 - **Ensure that the folder you opened matches the one shown in the accompanying
-  figure for accurate reference.\***
+  figure for accurate reference.**
 
 ### 3. Use Run++ VS Code Extension to Run Code
 

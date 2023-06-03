@@ -11,6 +11,6 @@
 
 <img src="circle.png" alt="circle"></img>
 
-### Necklace Drawing - [code](Necklace.cpp)
+### Necklace Drawing - [Code](Necklace.cpp)
 
 <img src="necklace.png" alt="necklace"></img>

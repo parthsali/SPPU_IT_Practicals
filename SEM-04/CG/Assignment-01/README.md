@@ -27,7 +27,7 @@
   convenient way to run and test your OpenGL code using the extension's
   features._
 
-## Output
+## Output ScreenShot
 
 <img src="Assignment-01.png" alt="assignment-01"></img>
 

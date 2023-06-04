@@ -95,12 +95,6 @@ void display() {
     // Last circle
     drawCircle(0, -130, 20);
 
-
-    
-
-
-    // Right side Circles
-    
     
     glFlush();
 }

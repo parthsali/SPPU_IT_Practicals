@@ -15,3 +15,7 @@
 ### Necklace Drawing - [Code](Necklace.cpp)
 
 <img src="necklace.png" alt="necklace"></img>
+
+### Necklace-02 Drawing - [Code](Necklace02.cpp)
+
+<img src="necklace02.png" alt="necklace"></img>

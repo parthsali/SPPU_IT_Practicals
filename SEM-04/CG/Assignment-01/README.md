@@ -10,7 +10,7 @@
 
 - _Go to the provided link and download the folder containing the necessary
   OpenGL files. Make sure to save it to a location on your computer. Open the
-  downloaded folder in Visual Studio Code:_
+  downloaded folder in Visual Studio Code:_ [Click Here](https://drive.google.com/drive/folders/190tZM85YkTRY6P448hpnbViDvt423_Kj)
 
 ### 2. Launch Visual Studio Code on your system.
 

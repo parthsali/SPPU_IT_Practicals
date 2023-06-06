@@ -1,5 +1,4 @@
 #include <GL/glut.h>
-#include <iostream>
 #include <math.h>
 
 #define PIE 3.1415926535898

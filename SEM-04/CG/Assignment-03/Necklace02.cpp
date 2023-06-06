@@ -110,8 +110,6 @@ void display()
     // Last circle
     drawCircle(0 + x_coordinate, -130 + y_coordinate, 20);
 
-    // Right side Circles
-
     glFlush();
 }
 

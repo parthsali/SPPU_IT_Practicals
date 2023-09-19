@@ -1,4 +1,4 @@
-# OS Lab Manual - [Click here](OSLmanual.pdf)
+# OS Lab Manual - [Click here](oslabmanual.pdf)
 
 ## Table of Content
 

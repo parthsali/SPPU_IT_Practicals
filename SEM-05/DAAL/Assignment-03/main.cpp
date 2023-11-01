@@ -1,65 +1,94 @@
-#include <bits/stdc++.h>
-
+#include <iostream>
 using namespace std;
 
-bool isSafe(vector<vector<int>> v, int x, int y, int n)
+class nqueen
 {
+public:
+    bool check(int **arr, int row, int col, int n);
+    bool solve_nqueen(int **arr, int col, int n);
+};
 
-    for (int row = 0; row < x; row++)
+bool nqueen::check(int **arr, int row, int col, int n)
+{
+    int i, j;
+
+    // Check row on the left side
+    for (i = 0; i < col; i++)
     {
-        if (v[row][y] == 1)
+        if (arr[row][i])
         {
             return false;
         }
     }
 
-    int row = x;
-    int col = y;
-
-    while (row >= 0 && col >= 0)
+    // Check upper diagonal on the left side
+    for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
     {
-        if (v[row][col] == 1)
+        if (arr[i][j])
         {
             return false;
         }
-        row--;
-        col--;
     }
 
-    row = x;
-    col = y;
-    while (row >= 0 && col < n)
+    // Check lower diagonal on the left side
+    for (i = row, j = col; j >= 0 && i < n; i++, j--)
     {
-        if (v[row][col] == 1)
+        if (arr[i][j])
         {
             return false;
         }
-        row--;
-        col++;
     }
 
+    cout << "Placed queen q" << col + 1 << " at row " << row + 1 << "\n";
     return true;
 }
 
-bool nQueen(vector<vector<int>> &v, int x, int n)
+bool nqueen::solve_nqueen(int **arr, int col, int n)
 {
-    if (x >= n)
+    // To check if all queens are placed
+    if (col >= n)
     {
+        cout << "===============================================================\n";
+        cout << "ALL QUEENS ARE PLACED\n";
+        cout << "===============================================================\n";
         return true;
     }
 
-    for (int col = 0; col < n; col++)
+    for (int i = 0; i < n; i++)
     {
-        if (isSafe(v, x, col, n))
+        if (check(arr, i, col, n))
         {
-            v[x][col] = 1;
+            arr[i][col] = 1;
 
-            if (nQueen(v, x + 1, n))
+            // Displaying placed queens
+            cout << "===============================================================\n";
+            for (int k = 0; k < n; k++)
+            {
+                for (int l = 0; l < n; l++)
+                {
+                    if (arr[k][l] == 1)
+                    {
+                        cout << "q" << l + 1 << "\t";
+                    }
+                    else
+                    {
+                        cout << "0\t";
+                    }
+                }
+                cout << "\n";
+            }
+            cout << "===============================================================\n";
+
+            // Iterate to the next column
+            if (solve_nqueen(arr, col + 1, n))
             {
                 return true;
             }
 
-            v[x][col] = 0; // backtracking
+            cout << "===============================================================\n";
+            cout << "Backtrack queen q" << col + 1 << "\n";
+            cout << "===============================================================\n";
+            arr[i][col] = 0; // Backtrack
         }
     }
 
@@ -68,26 +97,58 @@ bool nQueen(vector<vector<int>> &v, int x, int n)
 
 int main()
 {
+    nqueen q1;
+rep:
     int n;
-    cout << "Enter the value of n: ";
+    cout << "Enter the chessboard size (size should be greater than 3):\n";
     cin >> n;
+    cout << "===============================================================\n";
 
-    vector<vector<int>> v(n, vector<int>(n, 0));
-
-    if (nQueen(v, 0, n))
+    if (n <= 3)
     {
-        cout << "Solution exists" << endl;
-        for (auto row : v)
+        cout << "Please enter a size greater than 3:\n";
+        cout << "===============================================================\n";
+        goto rep;
+    }
+
+    int **arr = new int *[n];
+
+    cout << "Initially the board is:\n";
+    // Initially setting value to 0
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = new int[n];
+        for (int j = 0; j < n; j++)
         {
-            for (auto col : row)
-            {
-                cout << col << " ";
-            }
-            cout << endl;
+            arr[i][j] = 0;
+            cout << "0\t";
         }
+        cout << "\n";
     }
-    else
+
+    cout << "===============================================================\n";
+    // Solve the problem
+    q1.solve_nqueen(arr, 0, n);
+    cout << "===============================================================\n";
+
+    cout << "AFTER PLACING THE QUEEN: \n";
+    for (int i = 0; i < n; i++)
     {
-        cout << "Solution does not exist" << endl;
+        for (int k = 0; k < n; k++)
+        {
+            if (arr[i][k] == 1)
+            {
+                cout << "q" << k + 1 << "\t";
+            }
+            else
+            {
+                cout << "0\t";
+            }
+        }
+        cout << "\n";
     }
+
+    cout << "===============================================================\n";
+
+    return 0;
 }

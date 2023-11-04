@@ -1,6 +1,3 @@
-// Name : Parth Sali
-// Roll No. : 33166
-
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>

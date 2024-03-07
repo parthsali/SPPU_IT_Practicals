@@ -13,6 +13,9 @@ Help.md
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+#private keys (for the cns-assignment-05)
+*.pem
+
 # Package Files #
 *.jar
 *.war

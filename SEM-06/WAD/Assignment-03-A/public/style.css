@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+header {
+    background-image: url(assets/banner-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a {
+    border-bottom: 1px solid white;
+}
+
+.main-nav li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    margin-right: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-one {
+    background-color: darkorange;
+}
+
+.btn-two:hover {
+    background-color: darkorange;
+    transition: all 0.2s ease-in;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+}
+
+.service {
+    background-image: url(assets/img-banner@2x.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    background-image: url(assets/DSC_0036.JPG);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog {
+    background-image: url(assets/banner-texture@2x.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contact {
+    background-image: url(assets/img-contact-form-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.faq {
+    background-image: url(assets/img-prop-type@2x.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-form {
+    font-family: "Arial", "Helvetica", sans-serif;
+    margin: auto;
+    padding: 0 200px;
+}
+
+.contact-section-header {
+    color: #282828;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.form input,
+textarea {
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    width: 70%;
+    height: 60px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;
+    margin: 5px 0;
+}
+
+.form input.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    width: 71%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.subject {
+    height: 150px;
+    color: black;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .blog {
+        background-image: url(assets/banner-texture@2x.png) !important;
+    }
+
+    .faq {
+        background-image: url(assets/img-prop-type@2x.jpg) !important;
+    }
+}

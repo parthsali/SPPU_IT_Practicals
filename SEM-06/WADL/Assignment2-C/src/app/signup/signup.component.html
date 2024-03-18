@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>SignUp</h2>
+    <form (ngSubmit)="register()">
+        <label>Name: <input [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}"></label><br>
+        <label>Username: <input [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}"></label><br>
+        <label>Email: <input type="email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"></label><br>
+        <label>Password: <input type="password" [(ngModel)]="user.password"
+                [ngModelOptions]="{standalone: true}"></label><br>
+        <label>Confirm Password: <input type="password" [(ngModel)]="user.confirmPassword"
+                [ngModelOptions]="{standalone: true}" required></label><br>
+        <label>Date of Birth: <input type="date" [(ngModel)]="user.dob"
+                [ngModelOptions]="{standalone: true}"></label><br>
+        <label>Phone: <input type="tel" [(ngModel)]="user.phone" pattern="[0-9]{10}"
+                [ngModelOptions]="{standalone: true}"></label><br>
+        <label>City: <input [(ngModel)]="user.city" [ngModelOptions]="{standalone: true}"></label><br>
+        <label>State: <input [(ngModel)]="user.state" [ngModelOptions]="{standalone: true}"></label><br>
+        <label>Pincode: <input [(ngModel)]="user.pincode" pattern="[0-9]{6}"
+                [ngModelOptions]="{standalone: true}"></label><br>
+
+        <button type="submit">Register</button>
+    </form>
+    <p>Already registered? <a routerLink="/login">Login here</a></p>
+</div>

@@ -1,0 +1,61 @@
+/* Add this to your component's CSS file or styles.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Micro+5&display=swap');
+
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 130px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    box-shadow: 5px 5px 5px crimson;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(88, 88, 217);
+
+}
+
+p {
+    margin-top: 15px;
+    margin-left: 75px;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: rgb(82, 238, 82);
+}

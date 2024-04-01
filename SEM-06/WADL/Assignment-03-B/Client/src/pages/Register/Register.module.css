@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    flex-direction: row-reverse;
+}
+
+.info_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left bottom, #98b3f1, #d8cff9);
+    font-family: "Tilt Neon", cursive;
+}
+
+.info_center_container {
+    color: white;
+    width: 75%;
+    height: 56%;
+    box-shadow: 1px 1px 10px 0.5px rgb(159, 156, 156);
+    background-image: linear-gradient(to left bottom, #a2b7eb, #c8cef5);
+    border-radius: 10px;
+}
+
+.info_center_container .heading {
+    font-size: 70px;
+    margin: 20px 32px;
+}
+
+.info_center_container .subheading {
+    font-size: 45px;
+    margin: 20px 32px;
+}
+
+.input_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_center_container {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_center_container .welcome {
+    margin: 10px 20px 8px;
+    width: 80%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.input_center_container .welcome>h1 {
+    font-size: 35px;
+}
+
+.input_center_container .welcome>h3 {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.input_center_container .input_field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 5px;
+    width: 80%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.input_center_container .input_field>label {
+    margin: 3px 0;
+}
+
+.input_center_container .input_field>input {
+    width: 100%;
+    height: 33px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.input_center_container .forgot_password {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 12px 20px 8px;
+    font-size: 13px;
+}
+
+.input_center_container .forgot_password .checkbox {
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 1px;
+}
+
+.input_center_container .forgot_password>a {
+    text-decoration: none;
+}
+
+.input_center_container .signup_btn {
+    background-image: linear-gradient(to left, #8c82fa, #5dacfa);
+    margin: 20px 20px 10px;
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+}
+
+.input_center_container .google {
+    width: 80%;
+    margin: 10px 20px;
+}
+
+.input_center_container .google .google_btn {
+    width: 100%;
+    border: none;
+    background-color: white;
+    box-shadow: 1px 1px 6px 0.5px grey;
+    padding: 4.3px;
+    border-radius: 5px;
+}
+
+.input_center_container .google img {
+    width: 50px;
+    position: relative;
+    top: 2px;
+}
+
+.input_center_container .google .google_text {
+    position: relative;
+    top: -5px;
+    left: -10px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+.blue {
+    color: #181851;
+}
+
+.line {
+    width: 80%;
+    border: 0.5px solid grey;
+    margin: 20px;
+}
+
+.footer {
+    width: 80%;
+    margin: 0px 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer>p>a {
+    text-decoration: none;
+}

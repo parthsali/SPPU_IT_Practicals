@@ -1,4 +1,3 @@
-// Create node js server to serve the static files, dont use express, use http module
 
 const http = require('http');
 const fs = require('fs');

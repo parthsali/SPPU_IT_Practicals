@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>SignUp</h2>
+    <form (ngSubmit)="register()">
+        <label>Name: <input [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}" /></label><br>
+        <label>Username: <input [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" /></label><br>
+        <label>Email: <input type="email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" /></label><br>
+        <label>Password: <input type="password" [(ngModel)]="user.password"
+                [ngModelOptions]="{standalone: true}" /></label><br>
+        <label>Confirm Password: <input type="password" [(ngModel)]="user.confirmPassword"
+                [ngModelOptions]="{standalone: true}" required /></label><br>
+
+
+        <button type="submit">Register</button>
+    </form>
+    <p>Already registered? <a routerLink="/login">Login here</a></p>
+</div>

@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td><button (click)="deleteUser(user.email)">Delete</button></td>
+            <!-- <td><button (click)="editUser(user.email)">Edit</button></td> -->
+
+            <!-- This line is the only difference between this file and the file in the previous step -->
+        </tr>
+    </tbody>
+</table>

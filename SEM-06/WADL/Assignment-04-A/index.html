@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment-04-A</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1 style="text-align: center;">Contact Form</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <form id="myForm">
+                <div data-role="fieldcontain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+    </div>
+
+    <script>
+        $(document).on('pagecreate', function () {
+            $('#myForm').on('submit', function (event) {
+                event.preventDefault();
+
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
+
+
+                alert('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+            });
+        });
+    </script>
+</body>
+
+</html>

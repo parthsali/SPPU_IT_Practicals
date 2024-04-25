@@ -4,7 +4,7 @@
 
 **1. Create a GitHub Account:**
 
-- Visit https://github.com/Index and sign up for a free account.
+- Visit https://github.com and sign up for a free account.
 - Follow the on-screen instructions to complete your registration.
 
 **2. Install Git (if not already installed):**

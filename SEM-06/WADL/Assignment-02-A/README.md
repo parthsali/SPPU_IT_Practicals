@@ -47,8 +47,8 @@
 
 **Helpful Links:**
 
-**GitHub Help**: https://docs.github.com/en/get-started
-**Git SCM Documentation**: https://git-scm.com/
+- **GitHub Help**: https://docs.github.com/en/get-started
+- **Git SCM Documentation**: https://git-scm.com/
 
 **Remember:**
 

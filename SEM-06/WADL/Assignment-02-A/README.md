@@ -1,4 +1,4 @@
-## Setting Up Version Control with Git and GitHub
+## Assignment-02-A : Setting Up Version Control with Git and GitHub
 
 #### This guide outlines the steps to create a version control account on GitHub and use Git commands to manage your code effectively:
 

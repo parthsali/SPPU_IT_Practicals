@@ -1,4 +1,4 @@
-## User Registration with JSONPlaceholder API and Local Storage
+## Assignment-01-B : User Registration with JSONPlaceholder API and Local Storage
 
 #### This project demonstrates a web application for user registration using the JSONPlaceholder API and local storage. It leverages JavaScript's AJAX functionality to interact with the API and store user data locally.
 

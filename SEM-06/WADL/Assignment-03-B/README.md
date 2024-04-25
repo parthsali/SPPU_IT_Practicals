@@ -2,7 +2,7 @@
 
 #### This document provides an overview of Node.js server creation and details about [Node.js](https://nodejs.org/en) and [MongoDB](https://www.mongodb.com/).
 
-## Node.js Server Creation
+### Node.js Server Creation
 
 #### Node.js allows you to execute JavaScript code outside of a web browser, enabling server-side development for building web applications and APIs. Here's a basic workflow for creating a Node.js server:
 
@@ -20,13 +20,13 @@
 
 - **5. Running the Server:** Execute the server file using `node server.js` (or `nodemon server.js` for hot reloading) in your terminal.
 
-## Node.js and MongoDB
+### Node.js and MongoDB
 
 **Node.js:** Provides a JavaScript runtime environment for server-side development.
 
 **MongoDB:** A NoSQL document-oriented database for flexible data storage.
 
-## Integration:
+### Integration:
 
 #### Node.js and MongoDB can be combined to build powerful web applications. Here's how they work together:
 

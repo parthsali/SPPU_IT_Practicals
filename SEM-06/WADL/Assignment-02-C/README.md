@@ -1,26 +1,29 @@
-# Assignment4
+# Assignment-02-C : Angular User Management Application
+
+#### This project demonstrates a user management application built with Angular. Users can register, log in, and view their profile information. Data is stored in a mock service for simplicity, but you can easily replace it with a real-time database or API in the future.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
 
-## Development server
+## Getting Started:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**1. Prerequisites**: Have Node.js and npm (or yarn) installed.
 
-## Code scaffolding
+**2. Project Setup:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Use the Angular CLI to create a new project: `ng new Assignment-02-C`
+  Navigate to the project directory: `cd Assignment-02-C`
 
-## Build
+**3. Run the Application:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Install dependencies: `npm install` (or `yarn install`)
+- Start the development server: `ng serve`
+- Open `http://localhost:4200` in your browser.
 
-## Running unit tests
+**Key Functionalities:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- User Registration
+- User Login
+- Profile Component for Viewing User Data
 
 ## Further help
 

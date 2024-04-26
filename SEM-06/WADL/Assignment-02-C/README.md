@@ -1,4 +1,4 @@
-# Assignment-02-C : Angular User Management Application
+## Assignment-02-C : Angular User Management Application
 
 #### This project demonstrates a user management application built with Angular. Users can register, log in, and view their profile information. Data is stored in a mock service for simplicity, but you can easily replace it with a real-time database or API in the future.
 

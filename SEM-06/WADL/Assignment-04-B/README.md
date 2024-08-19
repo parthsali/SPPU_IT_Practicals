@@ -1,6 +1,6 @@
 ## Assignment-04-B : Deploying a Web Application on AWS
 
-##### Objective: Deploy your web application (created in the previous assignment) on either AWS VPC or AWS Elastic Beanstalk.
+##### Objective: Deploy your web application on either AWS VPC or AWS Elastic Beanstalk.
 
 ### Choosing Your Deployment Platform:
 
